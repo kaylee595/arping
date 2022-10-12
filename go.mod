@@ -1,3 +1,3 @@
-module github.com/j-keck/arping
+module github.com/kaylee595/arping
 
 go 1.12
