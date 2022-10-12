@@ -15,7 +15,7 @@ func findIPInNetworkFromIface(dstIP net.IP, iface net.Interface) (net.IP, error)
 
 	for _, a := range addrs {
 		if ipnet, ok := a.(*net.IPNet); ok {
-			if ipnet.Contains(dstIP) {
+			if ipnet.IP[0] == 0 {
 				return ipnet.IP, nil
 			}
 		}
