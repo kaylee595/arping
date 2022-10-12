@@ -24,7 +24,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/j-keck/arping"
+	"github.com/kaylee595/arping"
 	"net"
 	"os"
 	"time"
